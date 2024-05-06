@@ -1,0 +1,15 @@
+// C++ code
+//
+int ledPin = 13; //LED conectado ao 13
+int inPin = 1;  //LED conectado ao 7
+int val = 0;  //variável para guardar o valor lido
+
+void setup(){
+pinMode(ledPin, OUTPUT);   //Configura o pino 13 como saída
+pinMode(inPin, INPUT);     //configura o pino 7 como 
+}
+
+void loop(){
+val = digitalRead(inPin);  //lê o pino de entrada
+digitalWrite(ledPin, val); //aciona o led como valor lodo do botão
+}
